@@ -54,10 +54,8 @@ class DetailUserActivity : AppCompatActivity() {
                     tvFollowers.text = "${it.followers} Followers"
                     tvFollowing.text = "${it.following} Following"
                     showLoading(false)
-                    Glide.with(this@DetailUserActivity)
-                        .load(it.avatar_url)
-                        .transition(DrawableTransitionOptions.withCrossFade())
-                        .centerCrop()
+                    Glide.with(this@DetailUserActivity).load(it.avatar_url)
+                        .transition(DrawableTransitionOptions.withCrossFade()).centerCrop()
                         .into(ivProfile)
                 }
             }

@@ -71,6 +71,4 @@ class DetailUserViewModel(application: Application) : AndroidViewModel(applicati
             userDao?.deleteUserFavorite(id)
         }
     }
-
-
 }
